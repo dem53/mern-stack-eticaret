@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  background-color: whitesmoke;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1s ease-out;
+}
+
+
+/* Geçiş animasyonu */
+.banner:nth-child(odd) {
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.banner:nth-child(even) {
+  animation: fadeInDown 1s ease-in-out forwards;
+}
+
+/* Fade-in animasyonları */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.banner-1 {
+  background: url('/src/images/hoodies-bg.avif');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner-2 {
+  background: url('/src/images/tshirt-bg.avif');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner-3 {
+  background: url('/src/images/windbreaker-bg.avif');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner-4 {
+  background: url('/src/images/sweat-bg.avif');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner-5 {
+  background: url('/src/images/şa .avif');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+
+.montserrat {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.raleway {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  width: calc(300px * 3);
+}
+
+.carousel-item {
+  transition: transform 5s ease-in-out;
+}
+
+.carousel-wrapper .carousel-container {
+  animation: scrollAnimation 30s infinite;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(-35%);
+  }
+
+  40% {
+    transform: translateX(-70%);
+  }
+
+  60% {
+    transform: translateX(-100%);
+  }
+
+  70% {
+    transform: translateX(-70);
+  }
+
+  80% {
+    transform: translateX(-35%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    gap: 4px;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.scroll-text {
+  display: flex;
+  animation: slide 1453s linear infinite;
+  white-space: nowrap;
+}
+
+.scroll-text span {
+  margin-right: 50px;
+}
