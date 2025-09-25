@@ -2,6 +2,8 @@
 
 lapandia is a full-stack e-commerce web application that allows users to browse products, add them to cart, manage favorites, and complete purchases through various payment methods including credit card and bank transfer.
 
+(The full version of the project has not been added.)
+
 ## Project Overview
 
 This project consists of a React frontend and Node.js/Express backend with MongoDB as the database. It includes user authentication, product management, shopping cart functionality, order processing, and payment integration with Iyzipay.
@@ -119,5 +121,6 @@ The application can be deployed using various platforms:
 This project is licensed under the ISC License.
 
 ## Contact
+
 
 For any inquiries, please reach out to the project maintainers. 
