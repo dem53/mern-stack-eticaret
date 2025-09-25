@@ -2,7 +2,7 @@
 
 lapandia is a full-stack e-commerce web application that allows users to browse products, add them to cart, manage favorites, and complete purchases through various payment methods including credit card and bank transfer.
 
-(The full version of the project has not been added.)
+(The full project has not been uploaded yet. A full version is available for individuals and companies that will list their products in a live environment.)
 
 ## Project Overview
 
@@ -124,3 +124,4 @@ This project is licensed under the ISC License.
 
 
 For any inquiries, please reach out to the project maintainers. 
+
